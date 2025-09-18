@@ -1,0 +1,29 @@
+CONCLUSIONES DEL ANÁLISIS DE TEXTURAS
+
+1. Selección de Imágenes
+Se usaron 9 imágenes en escala de grises de pan y 3 de esponjas.  
+Las esponjas se eligieron por su similitud visual con el pan, de modo que
+fuera posible comparar texturas con patrones granulados y repetitivos.
+
+2. Implementación
+- En MATLAB la implementación fue directa gracias a funciones nativas de
+  GLCM, LBP, Gabor y Wavelets, lo que permitió obtener resultados rápidos.
+- En Python fue necesario programar más detalles con `scikit-image` y
+  `OpenCV`, pero se tuvo mayor control y flexibilidad en el proceso.
+
+3. Resultados
+Los vectores de características obtenidos fueron consistentes en ambos
+entornos. Las pequeñas diferencias se deben a la forma en que cada
+herramienta normaliza y maneja los cálculos.  
+La comparación de pan y esponjas mostró que, aunque comparten patrones
+granulados, los algoritmos logran capturar diferencias en contraste,
+correlación y energía.
+
+4. Conclusión
+En este contexto, ambos lenguajes permitieron cumplir el objetivo:  
+extraer descriptores de textura y organizarlos en bases de datos para
+posterior análisis.  
+MATLAB facilitó la rapidez en la experimentación, mientras que Python
+resultó más adecuado para estructurar y guardar los resultados en un flujo
+reproducible y automatizable.
+
